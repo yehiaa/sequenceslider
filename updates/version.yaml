@@ -1,0 +1,5 @@
+1.0.1: First version of SequenceSlider
+1.0.2: 
+    - create models, migrations and controller
+    - create_sliders_table.php
+    - create_slider_items_table.php

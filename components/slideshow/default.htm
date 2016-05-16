@@ -1,0 +1,32 @@
+<!-- Start slider -->
+<section id="aa-slider">
+  <div class="aa-slider-area">
+    <div id="sequence" class="seq">
+      <div class="seq-screen">
+        <ul class="seq-canvas">
+          <!-- single slide item -->
+          {% for slider in  __SELF__.sliderItems %}
+			<li>
+		        <div class="seq-model">
+		          <img data-seq src="{{ slider.image.getPath }}" alt="slider.image.alt" />
+		        </div>
+		        <div class="seq-title">
+		         <span data-seq>{{ slider.subtitle }}</span>                
+		          <h2 data-seq>{{ slider.title }}</h2>
+		          <p data-seq>{{ slider.paragraph }}</p>
+		          <a data-seq href="{{ slider.link|default('#') }}" class="aa-shop-now-btn aa-secondary-btn">
+		          {{ slider.linkText }}</a>
+		        </div>
+		      </li>
+		{% endfor %}
+        </ul>
+      </div>
+      <!-- slider navigation btn -->
+      <fieldset class="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
+        <a type="button" class="seq-prev" aria-label="Previous"><span class="fa fa-angle-left"></span></a>
+        <a type="button" class="seq-next" aria-label="Next"><span class="fa fa-angle-right"></span></a>
+      </fieldset>
+    </div>
+  </div>
+</section>
+<!-- / slider -->

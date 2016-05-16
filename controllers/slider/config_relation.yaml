@@ -1,0 +1,8 @@
+slideritems:
+    label: slider items
+    view:
+        list: $/yehiaa/sequenceslider/models/slideritem/columns.yaml
+        form: $/yehiaa/sequenceslider/models/slideritem/fields.yaml
+        toolbarButtons: create|delete
+    manage:
+        form: $/yehiaa/sequenceslider/models/slideritem/fields.yaml

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Slider
+
+# Model Form Field configuration
+form: $/yehiaa/sequenceslider/models/slider/fields.yaml
+
+# Model Class name
+modelClass: Yehiaa\SequenceSlider\Models\Slider
+
+# Default redirect location
+defaultRedirect: yehiaa/sequenceslider/slider
+
+# Create page
+create:
+    title: Create Slider
+    redirect: yehiaa/sequenceslider/slider/update/:id
+    redirectClose: yehiaa/sequenceslider/slider
+
+# Update page
+update:
+    title: Edit Slider
+    redirect: yehiaa/sequenceslider/slider
+    redirectClose: yehiaa/sequenceslider/slider
+
+# Preview page
+preview:
+    title: Preview Slider

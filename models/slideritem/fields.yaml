@@ -1,0 +1,28 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    image:
+        label: Image
+        type: fileupload
+        mode: image
+
+    title:
+        label: Title
+        placeholder: title 
+
+    subtitle:
+        label: Subtitle
+        placeholder: subtitle 
+
+    paragraph:
+        label: Paragraph
+
+    linkText:
+        label: linkTitle
+        placeholder: link text  
+
+    link:
+        label: Link
+        placeholder: link href  

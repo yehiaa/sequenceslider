@@ -1,0 +1,16 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    name:
+        label: Name
+
+    description:
+        label: Description
+
+    items: 
+        label: Slider items
+        type: partial
+        path: fields_slideritems
