@@ -9,6 +9,7 @@ columns:
     image:
         type: partial
         path: ~/plugins/yehiaa/sequenceslider/models/slideritem/_image.htm
+        sortable: false
 
     subtitle:
         label: Subtitle
