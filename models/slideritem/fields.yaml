@@ -20,7 +20,7 @@ fields:
         label: Paragraph
 
     linkText:
-        label: linkTitle
+        label: link Text
         placeholder: link text  
 
     link:

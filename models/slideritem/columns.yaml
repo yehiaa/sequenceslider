@@ -17,8 +17,8 @@ columns:
     paragraph:
         label: Paragraph
 
-    linkTitle:
-        label: linkTitle
+    linkText:
+        label: linkText
 
     link:
         label: Link
