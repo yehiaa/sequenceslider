@@ -28,7 +28,11 @@ class SlideShow extends ComponentBase
 
     public function sliderItems()
     {
-        return Slider::find($this->property("slider"))->slideritems ;
+        $slider = Slider::with("slideritems")->find($this->property("slider")) ;
+        if ($slider) {
+            return $slider->slideritems;
+        }
+        return null ;
     }
 
     public function getSliderOptions()

@@ -1,4 +1,5 @@
 <!-- Start slider -->
+{% if __SELF__.sliderItems %}
 <section id="aa-slider">
   <div class="aa-slider-area">
     <div id="sequence" class="seq">
@@ -6,7 +7,7 @@
         <ul class="seq-canvas">
           <!-- single slide item -->
           {% for slider in  __SELF__.sliderItems %}
-			<li>
+			     <li>
 		        <div class="seq-model">
 		          <img data-seq src="{{ slider.image.getPath }}" alt="slider.image.alt" />
 		        </div>
@@ -18,7 +19,7 @@
 		          {{ slider.linkText }}</a>
 		        </div>
 		      </li>
-		{% endfor %}
+		    {% endfor %}
         </ul>
       </div>
       <!-- slider navigation btn -->
@@ -29,4 +30,7 @@
     </div>
   </div>
 </section>
+{%else %}
+<h1>NO sliders </h1>
+{% endif %}
 <!-- / slider -->
