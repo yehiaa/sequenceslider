@@ -7,19 +7,35 @@
         <ul class="seq-canvas">
           <!-- single slide item -->
           {% for slider in  __SELF__.sliderItems %}
-			     <li>
-		        <div class="seq-model">
-		          <img data-seq src="{{ slider.image.getPath }}" alt="slider.image.alt" />
-		        </div>
-		        <div class="seq-title">
-		         <span data-seq>{{ slider.subtitle }}</span>                
-		          <h2 data-seq>{{ slider.title }}</h2>
-		          <p data-seq>{{ slider.paragraph }}</p>
-		          <a data-seq href="{{ slider.link|default('#') }}" class="aa-shop-now-btn aa-secondary-btn">
-		          {{ slider.linkText }}</a>
-		        </div>
-		      </li>
-		    {% endfor %}
+           <li>
+            <div class="seq-model">
+              <img data-seq src="{{ slider.image.getPath }}" alt="slider.image.alt" />
+            </div>
+            <div class="seq-title">
+             {% if slider.subtitle !='' %}
+              <span data-seq>{{ slider.subtitle }}</span>
+             {% else %}              
+             {% endif %}
+           
+             {% if slider.title !='' %}            
+                 <h2 data-seq>{{ slider.title }}</h2>
+             {% else %}             
+             {% endif %}
+              
+             {% if slider.title !='' %}
+               <p data-seq>{{ slider.paragraph }}</p>
+             {% else %}             
+             {% endif %}
+
+             {% if slider.title !='' %}
+              <a data-seq href="{{ slider.link|default('#') }}" class="aa-shop-now-btn aa-secondary-btn">
+              {{ slider.linkText }}</a>
+
+             {% else %}             
+             {% endif %}             
+            </div>
+          </li>
+        {% endfor %}
         </ul>
       </div>
       <!-- slider navigation btn -->
